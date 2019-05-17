@@ -19,24 +19,15 @@
       "dom"
     ],
     "paths": {
-      "lib": [
-        "dist/lib"
+      "user-login": [
+        "dist/user-login"
       ],
-      "lib/*": [
-        "dist/lib/*"
-      ],
-      "login": [
-        "dist/login"
-      ],
-      "login/*": [
-        "dist/login/*"
-      ],
-      "sociallogin": [
-        "dist/sociallogin"
-      ],
-      "sociallogin/*": [
-        "dist/sociallogin/*"
+      "user-login/*": [
+        "dist/user-login/*"
       ]
     }
-  }
+  },
+  "include": ["node_modules/angular-bootstrap-md/**/*.ts",  "src/**/*.ts"] // add this line
+
+
 }

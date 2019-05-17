@@ -1,0 +1,23 @@
+{
+  "name": "user-login",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "dependencies": {
+    "angular-bootstrap-md": "^7.5.2",
+    "angularx-social-login": "^1.2.7",
+    "tslib": "^1.9.0"
+  },
+  "main": "bundles/user-login.umd.js",
+  "module": "fesm5/user-login.js",
+  "es2015": "fesm2015/user-login.js",
+  "esm5": "esm5/user-login.js",
+  "esm2015": "esm2015/user-login.js",
+  "fesm5": "fesm5/user-login.js",
+  "fesm2015": "fesm2015/user-login.js",
+  "typings": "user-login.d.ts",
+  "metadata": "user-login.metadata.json",
+  "sideEffects": false
+}

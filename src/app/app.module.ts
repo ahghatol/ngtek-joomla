@@ -1,18 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
-
+import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
-//Componenets
-import { AppComponent } from './app.component';
+//import { UserLoginModule } from 'user-login';
 
-const appRoutes: Routes = [
+import { UserLoginModule } from '../../../ngtek-user-login/projects/user-login/src/lib/user-login.module';
 
-];
-
+const ComponenetsInterface = {
+   googleClientId : '1005635293950-29g89s87fm0dvj3540rsufta0oguts1l.apps.googleusercontent.com',
+   fbAppId : '2037079629930934',
+   baseUrl: 'https://smart-citizen.tekdi.net'
+}
 
 @NgModule({
   declarations: [
@@ -21,16 +22,11 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    ),
+    UserLoginModule.forRoot(ComponenetsInterface),
     MDBBootstrapModule.forRoot()
-
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [ NO_ERRORS_SCHEMA ]
-
+  schemas: [ NO_ERRORS_SCHEMA ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

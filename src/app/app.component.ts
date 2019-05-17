@@ -1,11 +1,10 @@
-import { Component, Output } from '@angular/core';
-import { sanitizeUrl } from '@angular/core/src/sanitization/sanitization';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
- 
+  title = 'ngtek-user-login';
 }
